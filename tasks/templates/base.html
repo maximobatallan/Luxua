@@ -48,7 +48,7 @@
                      <div class="logo-wrapper">
                         <div class="logo-wrapper-inner">
           
-                           <a href="{% url 'gallery' %}"><img src="{% static 'img/logotipo.PNG' %}" alt=""></a>
+                           <a href="#"><img src="{% static 'img/logotipo.PNG' %}" alt=""></a>
                          
                         </div>
                      </div>
@@ -109,11 +109,7 @@
                                        </ul>
                                     </li>
                                     <li>
-                                       {% if not user.is_authenticated %}
-                                          <li><a href="{% url 'signup' %}">Registrarse</i></a></li>
-                                          
-                                          <li><a href="{% url 'signin' %}">Iniciar Sesión</i></a></li>
-                                       {% endif %}
+                                      
                                        
                                        {% if user.is_authenticated %}
                                           <li><a href="{% url 'cargaproducto' %}">Admin</i></a></li>
