@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+        {% block content %}
+
+        <form action="{% url 'categoria' %}" method="post" enctype="multipart/form-data" class="car card-body">   
+            {% csrf_token %}      
+            
+  <!--     Categoria Producto Start      -->   
+  <br>
+  <div class="container">
+     <div class="row">
+        <div class="col-lg-12">
+           <div class="card">
+              
+                 <h1>Categoria Nueva</h1>
+              
+           </div><br>
+        </div>
+        {{form2}}
+     </div>   
+     
+  </div> 
+    </div>
+    <br>
+    
+<div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-8"></div> <!-- Agregar un margen de 2 columnas a la izquierda -->
+           
+                <div class="form-element">
+                    <button type="submit" class="cartbtn shop" style="text-align: center">Cargar Categoria</button>
+         
+            </div>
+            <div class="col-lg-2"></div> <!-- Agregar un margen de 2 columnas a la derecha -->
+        </div>
+    </div>
+        
+</form>
+<!--     Categoria Address End      -->        
+             
+               
+               <!--     Carga Producto Start      -->   
+               <br>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="card">
+                              
+                                 <h1>Carga de Producto</h1>
+                              
+                           </div><br>
+                        </div>
+                        {{form1}}
+                     </div>   
+                     
+                  </div> 
+                    </div>
+                    <br>
+                    
+            <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-8"></div> <!-- Agregar un margen de 2 columnas a la izquierda -->
+                           
+                                <div class="form-element">
+                                    <button type="submit" class="cartbtn shop" style="text-align: center">Cargar Producto</button>
+                         
+                            </div>
+                            <div class="col-lg-2"></div> <!-- Agregar un margen de 2 columnas a la derecha -->
+                        </div>
+                    </div>
+                        
+         </form>
+               <!--     Carga Producto Address End      -->                 
+      
+            
+    {% endblock %}

@@ -1,0 +1,58 @@
+ <!--   footer section start    -->
+ <footer>
+   <div class="container">
+      <div class="top-footer">
+         <div class="row">
+            <div class="col-xl-4 col-lg-4">
+               <div  class="logo-wrapper"><img src="assets/img/footer_logo.png" alt=""></div>
+               <p>Luxua Ropa Importada <br> Somos Luxua ropa importada <br> para toda Europa </p>
+            </div>
+            <div class="offset-xl-1 col-xl-2 col-lg-2">
+               <h4>Luxua</h4>
+               <ul class="userful-links">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#acercadeaev">Acerca de Luxua</a></li>
+                 
+          
+               </ul>
+            </div>
+            <div class="col-xl-2 col-lg-2">
+               <h4>Galeria</h4>
+               <ul class="userful-links">
+                  {% for cate in cat %}
+                                        
+
+                                          <li><a href="{% url 'catproducto' cate.cat %}">{{ cate.cat }}</a></li>
+                                          {% endfor %}
+                 
+          
+               </ul>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+               <h4>Contactenos</h4>
+               <div class="footer-contact">
+                  
+                  <div class="contact-info">
+                     <div class="icon-wrapper"><i class="flaticon-call"></i></div>
+                     <p>agregar telefono </p>
+                  </div>
+                  <div class="contact-info">
+                     <div class="icon-wrapper"><i class="flaticon-email"></i></div>
+                     <p>mail</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="bottom-footer">
+         <p class="text-center">Desarrollado por Algorithmic Evolution - 2023</p>
+      </div>
+   </div>
+
+   
+</footer>
+<!--   footer section end    -->    
+  <!-- Botón de WhatsApp -->
+<a href="https://wa.me/5491123965421" target="_blank" id="whatsapp-btn">
+  <i class="fab fa-whatsapp"></i>
+</a>
