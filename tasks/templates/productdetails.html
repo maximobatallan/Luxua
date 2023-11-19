@@ -65,8 +65,8 @@
                      </div>
                      <span>(53)</span>
                      <div class="price">
-                        <span>{{ productos.precio }}</span>
-                        <del>{{ productos.precioanterior }}</del>
+                        <span>"Є {{ productos.precio }}</span>
+                   
                      </div>
                      <div class="desc">
                         <p>{{ productos.descripcion }}</p>
@@ -154,7 +154,7 @@
                                  
                                  
 
-                                 <button name="submit_post" formaction="{% url 'Add' productos.id %}" class="wishlist">
+                                 <button name="submit_post" formaction="#" class="wishlist">
                                     <i class="fab fa-whatsapp"></i>Pedir por WhatsApp</button>
                               </div>
                  
@@ -164,7 +164,7 @@
                               
                               <div class="col-lg-4">
                                 
-                                 <button class="boxed-btn" name="submit_post" formaction="{% url 'Add' productos.id %}" class="wishlist">
+                                 <button class="boxed-btn" name="submit_post" formaction="#" class="wishlist">
                                     <i class="fab fa-whatsapp"></i>Pedir por WhatsApp</button>
 
                              </div>
